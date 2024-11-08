@@ -20,16 +20,13 @@
         email: string;
     }
 
-    // Function to update the profile
+
     function updateProfile(profile: Profile, updates: Partial<Profile>): Profile {
-        // Merge the original profile with the updates
         return { ...profile, ...updates };
     }
 
-    // Sample input
     const myProfile = { name: "Alice", age: 25, email: "alice@example.com" };
 
-    // Sample output
     console.log(updateProfile(myProfile, { age: 26 }));
 
 
